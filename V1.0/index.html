@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arte</title>
+
+	<meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+	<!--CSS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,500"> 
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" href="//www.builtbyevolve.com/files/nerveSlider/nerveSlider.min.css">
+</head>
+<body>
+	<!-- Menu -->
+	<div class="menu seccion seccion-menu">
+		<ul class="menu__lista" >
+			<li class="menu__lista_li"><p><a href="" style="text-decoration: none; color: #BD114E;">Start</a></p></li>
+			<li class="menu__lista_li"><p><a href="listen/" style="text-decoration: none; color: white;">Listen</a></p></li>
+			<li class="menu__lista_li"><p><a href="interact/" style="text-decoration: none; color: white;">interacts</a></p></li>
+			<li class="menu__lista_li"><p><a href="tour/" style="text-decoration: none; color: white;">Tour!</a></p></li>
+		</ul>
+	</div>
+
+	<!-- Inicio -->
+	<div id="inicio" class="inicio seccion seccion-inicio">
+		<div class="inicio__contenedor">
+			<div class="inicio__titulo">
+				<h1 class="title title-big">
+					<span class="text__separacion-cero">On The</span>
+					<span class="menu__lista_li-pink text__separacion-uno">M</span><span class="menu__lista_li-pink text__separacion-dos">o</span><span class="menu__lista_li-red text__separacion-tres">v</span><span class="menu__lista_li-red text__separacion-cuatro">e</span>
+				</h1>
+			</div>
+			<img id="play" class="inicio__img" src="img/pausa.png" onclick="toggleSong()">
+		</div>
+	</div>
+
+	<!--slider-->
+	<div id="slider" class="slider seccion seccion-slider">
+		<div class="slider__contenedor">
+			<div>
+				<div class="ns_slideContent inicio__banner" style="z-index: 100; width: 90vw; height: 22vh; background-color: #CF131C; margin-top: 0vh;">
+					<h1 class="title-big" style="margin: 0; z-index: 350;">Listen</h1>
+					<h1 class="subtitulo subtitulo-s" tyle="margin: 0;">Listen - See - Interact</h1>
+					<button type="button" class="subtitulo" style="background-color: #CF131C;  border: none; color: white; width: 40vh; height: 6vh; border-radius: 5vh; margin: 55vh 34vw;"><a href="/listen" style="text-decoration: none; color: white;">Explora!</a></button>
+				</div>
+				<img class="slider__img" src="img/escucha.jpg">
+			</div>
+			<div>
+				<div class="ns_slideContent inicio__banner" style="z-index: 100; width: 90vw; height: 22vh; background-color: #FFC300; margin-top: 0vh;">
+					<h1 class="title-big" style="margin: 0; z-index: 350;">See</h1>
+					<h1 class="subtitulo" tyle="margin: 0;">Listen - See - Interact</h1>
+					<button type="button" class="subtitulo" style="background-color: #FFC300;  border: none; color: white; width: 40vh; height: 6vh; border-radius: 5vh; margin: 55vh 34vw;"><a href="/tour" style="text-decoration: none; color: white;">Explora!</a></button>
+				</div>
+				<img class="slider__img" src="img/ve.jpg">
+				
+			</div>
+			<div>
+				<div class="ns_slideContent inicio__banner" style="z-index: 100; width: 90vw; height: 22vh; background-color: #FB1767; margin-top: 0vh;">
+					<h1 class="title-big" style="margin: 0; z-index: 350;">Jugar</h1>
+					<h1 class="subtitulo" tyle="margin: 0;">Listen - See - Interact</h1>
+					<button type="button" class="subtitulo" style="background-color: #FB1767;  border: none; color: white; width: 40vh; height: 6vh; border-radius: 5vh; margin: 55vh 34vw;"><a href="/interact" style="text-decoration: none; color: white;">Explora!</a></button>
+				</div>
+				<img class="slider__img" src="img/juega.jpg">
+			</div>
+		</div>
+	</div>
+	<!--Footer-->
+	<div class=" menu seccion seccion-menu" style="height: 40vh!important">
+		<p class="title" style="margin:auto; font-size: 2.4vw">Bego Montes<br>Daniela Alvarado<br>Erick H Cerecedo<br>Jose Cortes</p>
+	</div>
+
+	
+	<!--Scripts-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script src="https://use.fontawesome.com/25e7e1e662.js"></script>
+	<script src="//www.builtbyevolve.com/files/nerveSlider/jquery.nerveSlider.min.js"></script>
+	<script src="js/p5.js"></script>
+    <script src="js/addons/p5.dom.js"></script>
+    <script src="js/addons/p5.sound.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/sketch.js"></script>
+<!--
+    <script src="js/sketch2.js"></script>
+-->
+    <script>
+    	$(document).ready(function(){
+    		if (screen.width<=768){
+	    		$(".slider__contenedor").nerveSlider({
+				  	sliderWidth: "90vw",
+				   	sliderHeight: "90vh",
+				    sliderResizable: true,
+					slideTransition: "fade",
+				    showTimer: true,
+				    showPause: true,
+				    showArrows: true
+				});
+			}else{
+				$(".slider__contenedor").nerveSlider({
+				  	sliderWidth: "90vw",
+				   	sliderHeight: "90vh",
+				    sliderResizable: true,
+					slideTransition: "fade",
+				    showTimer: true,
+				    showPause: true,
+				    showArrows: true
+				});
+			}
+		});
+    </script>
+<!--
+    <script src="js/sketch2.js"></script>
+-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

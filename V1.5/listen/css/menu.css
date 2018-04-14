@@ -1,0 +1,78 @@
+/**
+ * @copyright 
+ * @author Erick || Chema || Dany || Bego
+ * @version 1.0 (Abril 2018)
+ * @since 1.0
+ */
+
+/*Importación de otros estilos*/
+.menu{
+	background-color: #121A25;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	height: 9vh!important;
+	margin: 0!important;
+
+
+	display: -webkit-flex;
+    -webkit-align-items: center;
+	-webkit-justify-content: space-between;
+}
+
+.menu__lista{
+	width: auto;
+	margin: auto;
+}
+
+.menu__lista_li{
+	font-size: 1.7vw;
+	font-family: "text";
+	margin: 0 3vw;
+}
+
+
+.menu__lista_li-pink{
+	color: #BD114E;
+}
+
+.menu__lista_li-red{
+	color: #C01C10;
+}
+
+/*Estilo media pantalla
+______________________________*/
+@media only screen and (max-width: 1050px){
+
+	.menu__lista_li{
+		font-size: 2.2vw;
+	}
+	
+}
+
+/*Estilo media pantalla
+______________________________*/
+@media only screen and (max-width: 600px){
+
+	.menu__lista_li{
+		font-size: 4vw;
+	}
+	
+}
+
+/*Estilo para móviles
+______________________________*/
+@media only screen and (max-device-width: 768px){
+	.menu__lista_li{
+		font-size: 5vw;
+	}
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: landscape){
+	.menu__lista_li{
+		font-size: 5vw;
+	}
+}
+
+
+

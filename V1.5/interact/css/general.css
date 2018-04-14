@@ -1,0 +1,161 @@
+/**
+ * @copyright 
+ * @author Erick || Chema || Dany || Bego
+ * @version 1.0 (Abril 2018)
+ * @since 1.0
+ */
+
+/*Importación de otros estilos*/
+@import "menu.css";
+@import "inicio.css";
+@import "slider.css";
+
+/*Tipografías*/
+@font-face{
+	font-family: "subtitulo";
+	src: url("fonts/Arctik_2.ttf");
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "text";
+	src: url("fonts/Arctik_1.ttf");
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: "titulo";
+	src: url("fonts/Arctik_3.ttf");
+	font-weight: bold;
+}
+
+/*Página
+
+*/
+html,body{
+	background-color: #1D1C26;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	font-family: text;
+	font-size: 1vw;
+	margin: 0;
+	padding: 0;
+}
+
+#inicio canvas{
+	position: absolute;
+	width: 100vw;
+	height: 81vh;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#defaultCanvas1 canvas{
+	width: 80vw;
+	height: 81vh;
+	margin: auto;
+	margin-top: 10vh;
+}
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    font-family: "text";
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+	display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-items: center;
+}
+
+li{
+	color: rgb(255,255,255);
+	cursor: pointer;
+}
+
+.seccion{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+
+}
+
+.titulo{
+	margin-bottom: 8vh;
+	font-size: 2.8vw;
+	font-weight: normal;
+	font-family: "titulo";
+
+}
+
+.subtitulo{
+	margin: 0 6%;
+    margin-bottom: 3vh;
+    font-family: "subtitulo";
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 3.5vh;
+}
+
+
+/*Estilo media pantalla
+______________________________*/
+@media only screen and (max-width: 768px){
+
+	.titulo{
+		margin-bottom: 8vh;
+		font-size: 4vw;
+	}
+
+	.subtitulo{	
+	    font-size: 2vw;
+	}
+}
+
+/*Estilo para móviles
+______________________________*/
+@media only screen and (max-device-width: 768px){
+	.titulo{
+		margin-bottom: 10vh;
+		font-size: 4vw;
+	}
+
+	.subtitulo{	
+	    font-size: 8vw;
+	}
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: landscape){
+	.menu__lista_li{
+		font-size: 5vw;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,257 @@
+/**
+ * @copyright 
+ * @author Erick || Chema || Dany || Bego
+ * @version 1.0 (Abril 2018)
+ * @since 1.0
+ */
+
+.seccion-inicio{
+	margin: 0!important;
+	height: 91vh!important;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	z-index: 100;
+
+	display: -webkit-flex;
+    -webkit-align-items: center;
+	-webkit-justify-content: space-between;
+
+	background-color: #1D1C26;
+}
+
+.inicio__contenedor{
+	z-index: 20;
+	width: 70vw;
+	height: auto;
+	margin: auto;
+
+	background-color: ;
+}
+
+.inicio__titulo{
+	height: 20vh;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.title-big{
+	text-align: center;
+	font-size: 8vw;
+	cursor: default;
+	margin: auto;
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.title-big:hover{
+	font-size: 8.7vw;
+	-webkit-font-size: 8.7vw;
+}
+
+.text__separacion-cero{
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.text__separacion-cero:hover{
+	font-size: 9.2vw;
+	-webkit-font-size: 9.2vw;
+}
+
+.text__separacion-uno{
+	letter-spacing: 0.1em;
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.text__separacion-uno:hover{
+	font-size: 9.2vw;
+	-webkit-font-size: 9.2vw;
+}
+
+.text__separacion-dos{
+	letter-spacing: 0.2em;
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5.s ease;
+}
+
+.text__separacion-dos:hover{
+	font-size: 9.2vw;
+	-webkit-font-size: 9.2vw;
+}
+
+.text__separacion-tres{
+	letter-spacing: 0.3em;
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.text__separacion-tres:hover{
+	font-size: 9.2vw;
+	-webkit-font-size: 9.2vw;
+}
+
+.text__separacion-cuatro{
+	letter-spacing: 0.4em;
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.text__separacion-cuatro:hover{
+	font-size: 9.2vw;
+	-webkit-font-size: 9.2vw;
+}
+
+.inicio__img{
+	width: 4vw;
+	margin-top: 2vh;
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.inicio__img:hover{
+	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+}
+
+.seccion__inicio{
+	 
+	width: 100vw; 
+	height: 91vh; 
+
+}
+
+/*Estilo media pantalla
+______________________________*/
+@media only screen and (max-width: 1050px){
+
+	.title-big{
+		font-size: 10vw;
+	}
+
+	.title-big:hover{
+		font-size: 10.7vw;
+		-webkit-font-size: 10.7vw;
+	}
+
+	.text__separacion-cero:hover{
+		font-size: 11.2vw;
+		-webkit-font-size: 11.2vw;
+	}
+
+	.text__separacion-uno:hover{
+		font-size: 11.2vw;
+		-webkit-font-size: 11.2vw;
+	}
+
+	.text__separacion-dos:hover{
+		font-size: 11.2vw;
+		-webkit-font-size: 11.2vw;
+	}
+
+	.text__separacion-tres:hover{
+		font-size: 11.2vw;
+		-webkit-font-size: 11.2vw;
+	}
+
+	.text__separacion-cuatro:hover{
+		font-size: 11.2vw;
+		-webkit-font-size: 11.2vw;
+	}
+
+	.inicio__img{
+		width: 5.5vw;
+	}
+	
+}
+
+/*Estilo media pantalla
+______________________________*/
+@media only screen and (max-width: 600px){
+	.text__separacion-uno{
+		letter-spacing: 0.1em;
+		margin-left: 6vw;
+	}
+
+	.title-big{
+		font-size: 15vw;
+	}
+
+	.title-big:hover{
+		font-size: 15.7vw;
+		-webkit-font-size: 15.7vw;
+	}
+
+	.text__separacion-cero:hover{
+		font-size: 16.2vw;
+		-webkit-font-size: 16.2vw;
+	}
+
+	.text__separacion-uno:hover{
+		font-size: 16.2vw;
+		-webkit-font-size: 16.2vw;
+	}
+
+	.text__separacion-dos:hover{
+		font-size: 16.2vw;
+		-webkit-font-size: 16.2vw;
+	}
+
+	.text__separacion-tres:hover{
+		font-size: 16.2vw;
+		-webkit-font-size: 16.2vw;
+	}
+
+	.text__separacion-cuatro:hover{
+		font-size: 16.2vw;
+		-webkit-font-size: 16.2vw;
+	}
+
+	.inicio__img{
+		width: 7vw;
+		margin-top: 10vh;
+	}
+	
+}
+
+/*Estilo para móviles
+______________________________*/
+@media only screen and (max-device-width: 768px){
+	.title-big{
+		font-size: 20vw;
+	}
+
+	.inicio__img{
+		width: 9vw;
+		margin-top: 10vh;
+	}
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: landscape){
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
